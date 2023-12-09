@@ -1,3 +1,2 @@
 #!/bin/bash
-chmod777 hello
-chmod666 hello
+chmod ugo+x hello
