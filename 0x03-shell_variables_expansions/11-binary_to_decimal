@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((10%2))
+echo "%d\n" £BINARY
