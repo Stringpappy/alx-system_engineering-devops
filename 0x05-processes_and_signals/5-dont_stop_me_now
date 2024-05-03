@@ -1,6 +1,6 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 # script that stops 4-to_infinity_and_beyond process.
 if [ -n "$id" ]
 then
-	kill -15 "$d"
+	kill -15 "$id"
 fi
