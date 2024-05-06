@@ -4,21 +4,18 @@
 #buzz if % 5 == 0
 #fizzbuzz if % 3 and % 5 == 0
 
-for fig in (1..100)
+for fig in {1..100}
 do 
     if (( fig %3 == 0 && fig % 5 == 0 ))
     then 
         echo "FizzBuzz"
-    elif ((fig % 3 == 0 ))
+    elif (( fig % 3 == 0 ))
     then    
         echo "Fizz"
-     elif ((fig % 5 == 0 ))
+     elif (( fig % 5 == 0 ))
     then    
         echo "Buzz"
     else
         echo "$fig"
     fi
 done
-
-
-

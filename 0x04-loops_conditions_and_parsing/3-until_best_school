@@ -2,7 +2,8 @@
 #Write a Bash script that displays Best School 10 times.
 
 iterator=0
-until [ $count -eq 10 ]
+
+until [ $iterator -eq 10 ]
 do
 	echo "Best School"
 	(( iterator++ ))

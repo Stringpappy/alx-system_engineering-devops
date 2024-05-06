@@ -4,6 +4,7 @@
 #the part of the name after the first dash
 
 c=$(ls)
-for x in $c; do
+for x in $c
+do
 	echo "$x" | cut -d '-' -f2
 done

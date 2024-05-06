@@ -2,9 +2,10 @@
 #script Display "best School" 10 times using while loop
 
 iterator=0
-until [ $iterator -lt 10 ]
+
+while [ $iterator -lt 10 ]
 do
-	if [ $iterator -eq 10 ]
+	if [ $iterator -eq 9 ]
 	then
 		echo "Hi"
 	fi
