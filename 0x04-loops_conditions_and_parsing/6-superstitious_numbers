@@ -1,0 +1,20 @@
+6-superstitious_numbers
+
+#!/usr/bin/env bash
+#script that display 1 to 20 in addition to:
+#displays 4 and then bad luck from China for the 4th loop iteration
+#displays 9 and then bad luck from Japan for the 9th loop iteration0
+#displays 17 and then bad luck from Italy for the 17th loop iteration
+
+iterator=1
+
+while [ $iterator -le 20 ]
+do
+	echo "$count"
+	case $count in 
+		"4") echo" bad luck from china";;
+		"9") echo" bad luck from Japan";;
+		"17") echo" bad luck from Italy";;
+	esac
+	(( iterator++ ))
+done

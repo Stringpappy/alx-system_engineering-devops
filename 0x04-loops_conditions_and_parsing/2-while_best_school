@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#script that displays Best School 10 times.
+
+iterator=0
+
+while [ $iterator -lt 10 ]
+do
+	echo "Best School"
+	(( iterator++ ))
+done
