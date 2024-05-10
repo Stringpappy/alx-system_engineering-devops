@@ -4,8 +4,8 @@ if [ "$(id -u)" -ne 0 ]; then
     echo "Please run this script as root."
     exit 1
 fi
-if grep -q "127.0.0.2 localhost" /etc/hosts; then
-    echo "Hosts file already configured."
+if grep -q  "127.0.0.2 localhost" /etc/hosts; then
+    exit
 else
     echo "127.0.0.2 localhost" >> /etc/hosts
     echo "Hosts file configured to resolve localhost to 127.0.0.2."

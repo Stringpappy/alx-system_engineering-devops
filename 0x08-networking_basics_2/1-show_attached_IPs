@@ -1,7 +1,2 @@
 #!/usr/bin/env bash
-
-active_ips=$(ip -4 addr show | grep -oP '(?<=inet\s)\d+(\.\d+){3}' | grep -vE '^127\.|^0\.|^169\.|^192\.168\.' | awk '!seen[$0]++')
-
-echo "Active IPv4 addresses on this machine:"
-echo "$active_ips"
-
+ipconfig/all
