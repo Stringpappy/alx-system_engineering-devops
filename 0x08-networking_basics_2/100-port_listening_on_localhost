@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#script that poer is listened on
+
+nc -l localhost 98
