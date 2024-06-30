@@ -1,4 +1,4 @@
-# Set the config of a ssh_file
+#scipt that  Set the config of a ssh_file
 file_line { 'Change the main private key':
   path => '/etc/ssh/ssh_config',
   line => '    IdentityFile ~/.ssh/school',
