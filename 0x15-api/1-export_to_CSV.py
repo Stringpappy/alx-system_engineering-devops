@@ -11,10 +11,10 @@ if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/"
     user = requests.get(url + "users/{}".format(user_id)).json()
     username = user.get("username")
-    todos = requests.get(url + "todos", params={"userId": user_id}).json()
+    to_do = requests.get(url + "todos", params={"userId": user_id}).json()
 
     with open("{}.csv".format(user_id), "w", newline="") as csvfile:
         writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
         [writer.writerow(
-            [user_id, username, z.get("completed"), t.get("title")]
+            [user_id, username, z.get("completed"), z.get("title")]
          ) for z in to_do]
