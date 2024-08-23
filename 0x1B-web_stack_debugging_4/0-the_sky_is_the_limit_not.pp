@@ -1,5 +1,5 @@
-
-f high amount of requests
+# This Puppet manifest configures Nginx to increase the maximum number of open files allowed
+# and then restarts the Nginx service to apply the changes.
 
 exec {'replace':
   provider => shell,
