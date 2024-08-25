@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-#t does $Write a Bash script that transfers a file from our client to a server:
+#:wq
+Bash script that transfers a file from our client to a server:
 
 #Requirements:
 
